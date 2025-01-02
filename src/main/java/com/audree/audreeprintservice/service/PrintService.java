@@ -6,11 +6,12 @@ import com.audree.audreeprintservice.dto.PrintRequestDto;
 import com.audree.audreeprintservice.dto.ResponseDto;
 
 public interface PrintService {
-	String printMessage();
+	
+	String printServieTest();
 
 	ResponseDto getDefaultPrinter();
 
-	ResponseDto getAllPrinters();
+	ResponseDto getAllPrinters();	
 
 	ResponseDto printPdfFile(PrintRequestDto printRequest);
 }

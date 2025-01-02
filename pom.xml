@@ -10,10 +10,10 @@
 	</parent>
 
 	<groupId>com.audree</groupId>
-	<artifactId>audreeprintservice</artifactId>	
+	<artifactId>audreeprintservice</artifactId>
 	<name>BRMSPrintService</name>
 	<description>Print Servive</description>
-	<version>1</version>	
+	<version>1</version>
 	<packaging>war</packaging>
 
 	<dependencies>
@@ -52,6 +52,12 @@
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-ui</artifactId>
 			<version>1.7.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.profesorfalken</groupId>
+			<artifactId>WMI4Java</artifactId>
+			<version>1.4.2</version>
 		</dependency>
 
 	</dependencies>
