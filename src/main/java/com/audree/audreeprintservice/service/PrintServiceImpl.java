@@ -125,7 +125,7 @@ public class PrintServiceImpl implements PrintService {
 				response.setSuccess(isPrinterOnline);
 				return response;
 			}
-			
+
 			// Configure Printer Job
 			PrinterJob job = PrinterJob.getPrinterJob();
 			job.setPrintService(printServices[0]);
@@ -163,12 +163,12 @@ public class PrintServiceImpl implements PrintService {
 	private PrintRequestAttributeSet SetPrintAttributes(PrintRequestDto printRequest) {
 
 		PrintRequestAttributeSet attr = new HashPrintRequestAttributeSet();
-	    attr.add(new PageRanges(printRequest.getFromPageNbr(),printRequest.getToPageNbr())); 
-		attr.add(MediaSizeName.ISO_A4); 
-		attr.add(OrientationRequested.LANDSCAPE); 
-		attr.add(new Copies(1)); 
-		attr.add(PrintQuality.NORMAL); 
-		attr.add(Sides.ONE_SIDED); 
+		attr.add(new PageRanges(printRequest.getFromPageNbr(), printRequest.getToPageNbr()));
+		attr.add(MediaSizeName.ISO_A4);
+		attr.add(OrientationRequested.LANDSCAPE);
+		attr.add(new Copies(1));
+		attr.add(PrintQuality.NORMAL);
+		attr.add(Sides.ONE_SIDED);
 		attr.add(new JobName("BRMS Print Job", null));
 
 		if ("COLOR".equalsIgnoreCase(printRequest.getChromacityType())) {

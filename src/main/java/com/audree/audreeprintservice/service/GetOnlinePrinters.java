@@ -5,10 +5,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.util.List;
-
+//This class is not used any where, It's just another way to get online printers
 public class GetOnlinePrinters {
 
-	public String GetOnlinePrinters() {
+	public String GetPrinters() {
 		// select printer that have state = 0 and status = 3, which indicates that
 		// printer can print
 		ProcessBuilder builder = new ProcessBuilder("powershell.exe",
